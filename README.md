@@ -8,11 +8,6 @@ COCO-Dataset-Filter
 
 This repository will extract specified categories from the COCO Dataset and save them in YOLO format.
  
-<div align="center">
-    <img src="https://github.com/KennyChen880127/Recording-with-Multiple-Cameras/blob/master/result/image1.png" alt="mainScreen"><br>
-    Main Screen
-</div>
- 
 # COCO Dataset
 [COCO](https://cocodataset.org/#home) is a large-scale object detection, segmentation, and captioning dataset. COCO has several features:
 
