@@ -39,3 +39,5 @@ This repository will extract specified categories from the COCO Dataset and save
   - --yolo_label: The YOLO annotation files to be exported
   - --yolo_img: The images corresponding to the annotation files to be exported.
   - --classes: Class numbers separated by spaces, e.g., 1 2 3.
+
+* You can refer to coco_classes.txt for class IDs.
