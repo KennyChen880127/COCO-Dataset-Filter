@@ -34,8 +34,8 @@ This repository will extract specified categories from the COCO Dataset and save
 
         python filter.py --coco_anno COCO_dataset/annotations --coco_img COCO_dataset/images --yolo_label datasets/labels/train --yolo_img datasets/images/train --classes 1 2 3 # person, bicycle, car
 
-** --coco_anno: The path for instances_train/val2017 in the COCO Dataset.
-** --coco_img: The image paths for the COCO Dataset.
-** --yolo_label: The YOLO annotation files to be exported
-** --yolo_img: The images corresponding to the annotation files to be exported.
-** --classes: Class numbers separated by spaces, e.g., 1 2 3.
+ * --coco_anno: The path for instances_train/val2017 in the COCO Dataset.
+ * --coco_img: The image paths for the COCO Dataset.
+ * --yolo_label: The YOLO annotation files to be exported
+ * --yolo_img: The images corresponding to the annotation files to be exported.
+ * --classes: Class numbers separated by spaces, e.g., 1 2 3.
