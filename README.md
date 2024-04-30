@@ -6,7 +6,7 @@ COCO-Dataset-Filter
 </h1>
 </div>
 
-This repository will extract specified categories from the COCO Dataset and save them in YOLO format.
+This repo will extract specified categories from the COCO Dataset and save them in YOLO format or in JSON format alike.
  
 # COCO Dataset
 [COCO](https://cocodataset.org/#home) is a large-scale object detection, segmentation, and captioning dataset. COCO has several features:
@@ -30,14 +30,25 @@ This repository will extract specified categories from the COCO Dataset and save
 
         sh data/COCO.sh
 
-* Run a Python script.
+* Extract specified categories from COCO and convert them to YOLO format:
 
-        python filter.py --coco_anno COCO_dataset/annotations --coco_img COCO_dataset/images --yolo_label datasets/labels/train --yolo_img datasets/images/train --classes 1 2 3 # person, bicycle, car
+        python filter2yolo.py --coco_anno COCO_dataset/annotations/instances_train2017.json --coco_img COCO_dataset/images --yolo_label datasets/labels/train --yolo_img datasets/images/train --classes 1 2 3 # person, bicycle, car
 
   - --coco_anno: The path for instances_train/val2017 in the COCO Dataset.
   - --coco_img: The image paths for the COCO Dataset.
   - --yolo_label: The YOLO annotation files to be exported
   - --yolo_img: The images corresponding to the annotation files to be exported.
   - --classes: Class numbers separated by spaces, e.g., 1 2 3.
+
+* Extract specified categories from COCO and preserve them in JSON format:
+
+        python filter2json.py --coco_anno COCO_dataset/annotations/instances_train2017.json --coco_img COCO_dataset/images --json_anno output.json --json_img output_img --classes 1 2 3 # person, bicycle, car
+
+  - --coco_anno: The path for instances_train/val2017 in the COCO Dataset.
+  - --coco_img: The image paths for the COCO Dataset.
+  - --json_anno: The JSON format annotation files to be exported.
+  - --json_img: The images corresponding to the annotation files.
+  - --classes: Class numbers separated by spaces, e.g., 1 2 3.
+
 
 * You can refer to coco_classes.txt for class IDs.
