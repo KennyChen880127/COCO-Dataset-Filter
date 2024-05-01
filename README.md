@@ -28,7 +28,7 @@ This repo will extract specified categories from the COCO Dataset and save them 
 
 * Download the COCO dataset and the 2017 annotations.(instances_(train/val)2017.json)
 
-        sh data/COCO.sh
+        sh COCO.sh
 
 * Extract specified categories from COCO and convert them to YOLO format:
 
