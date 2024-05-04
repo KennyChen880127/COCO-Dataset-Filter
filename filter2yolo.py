@@ -18,11 +18,11 @@ coco_classes =  [
 
 # ! Parser definition, convenient for CLI operation, if you want to operate in VSCode, please change default
 parser = argparse.ArgumentParser()
-parser.add_argument('--ca', '--coco_anno', default=r"COCO_dataset\annotations\instances_train2017.json", type=str, help='The path for instances_train/val2017 in the COCO Dataset.')
-parser.add_argument('--ci', '--coco_img', default=r"COCO_dataset\images", type=str, help='The image paths for the COCO Dataset.')
-parser.add_argument('--yl', '--yolo_label', default=r"labels\train", type=str, help='The YOLO annotation files to be exported.')
-parser.add_argument('--yi', '--yolo_img', default=r"images\train", type=str, help='The images corresponding to the annotation files to be exported.')
-parser.add_argument('--cls', '--classes', nargs='+', type=int, default=[1], help='Class numbers separated by spaces, e.g., 1 2 3.')
+parser.add_argument('--coco_anno', default=r"COCO_dataset\annotations\instances_train2017.json", type=str, help='The path for instances_train/val2017 in the COCO Dataset.')
+parser.add_argument('--coco_img', default=r"COCO_dataset\images", type=str, help='The image paths for the COCO Dataset.')
+parser.add_argument('--yolo_label', default=r"labels\train", type=str, help='The YOLO annotation files to be exported.')
+parser.add_argument('--yolo_img', default=r"images\train", type=str, help='The images corresponding to the annotation files to be exported.')
+parser.add_argument('--classes', nargs='+', type=int, default=[1], help='Class numbers separated by spaces, e.g., 1 2 3.')
 args = parser.parse_args()
 
 # ! Create folders to store output YOLO annotation files and images
