@@ -4,11 +4,11 @@ import shutil
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--ca', '--coco_anno', default=r"COCO_dataset\annotations\instances_train2017.json", type=str, help='The path for instances_train/val2017 in the COCO Dataset.')
-parser.add_argument('--ci', '--coco_img', default=r"COCO_dataset\images", type=str, help='The image paths for the COCO Dataset.')
-parser.add_argument('--ja', '--json_anno', default=r"output.json", type=str, help='The JSON format annotation files to be exported.')
-parser.add_argument('--ji', '--json_img', default=r"output_img", type=str, help='The images corresponding to the annotation files.')
-parser.add_argument('--cls', '--classes', nargs='+', type=int, default=[1], help='Class numbers separated by spaces, e.g., 1 2 3.')
+parser.add_argument('--coco_anno', default=r"COCO_dataset\annotations\instances_train2017.json", type=str, help='The path for instances_train/val2017 in the COCO Dataset.')
+parser.add_argument('--coco_img', default=r"COCO_dataset\images", type=str, help='The image paths for the COCO Dataset.')
+parser.add_argument('--json_anno', default=r"output.json", type=str, help='The JSON format annotation files to be exported.')
+parser.add_argument('--json_img', default=r"output_img", type=str, help='The images corresponding to the annotation files.')
+parser.add_argument('--classes', nargs='+', type=int, default=[1], help='Class numbers separated by spaces, e.g., 1 2 3.')
 
 args = parser.parse_args()
 
