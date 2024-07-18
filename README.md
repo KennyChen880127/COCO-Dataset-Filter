@@ -1,7 +1,7 @@
 <div align="center">
 <h1>
 <b>
-COCO-Dataset-Filter
+COCO Dataset Filter
 </b>
 </h1>
 </div>
